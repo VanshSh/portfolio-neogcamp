@@ -31,16 +31,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Vansh Sharma Portfolio</title>
+    <title>Vansh Sharma/Portfolio</title>
   </head>
+
+  <!-- 
+  - Create bookmark links of all the sections
+  - Create skill and About section
+  - Move to top button 
+ -->
+
   <body>
     <nav>
-      <!-- also create book mark link and back to home side button -->
-      <ul class="animate__animated animate__backInRight">
-        <li class="active" id="home">Home</li>
-        <li>Projects</li>
-        <li>About</li>
-        <li>Contact</li>
+      <ul class="animate__animated animate__rubberBand">
+        <li id="home"><a class="active" href="">Home</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./blogs.html">Blogs</a></li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </nav>
     <header>
@@ -60,7 +68,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
             quisquam.
           </p>
-          <a class="primary-btn" href="#">Live</a>
+          <a class="primary-btn" href="#">Demo</a>
           <a class="secondary-btn" href="#">Code</a>
         </article>
         <article class="projects">
@@ -74,21 +82,21 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
             quisquam.
           </p>
-          <a class="primary-btn" href="#">Live</a>
+          <a class="primary-btn" href="#">Demo</a>
           <a class="secondary-btn" href="#">Code</a>
         </article>
         <article class="projects">
           <img
             class="project--img"
-            src="./images/isYourBirthdayLucky.png"
-            alt="Project3"
+            src="./images/palimdromeBirthday.png"
+            alt="Project2"
           />
 
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
             quisquam.
           </p>
-          <a class="primary-btn" href="#">Live</a>
+          <a class="primary-btn" href="#">Demo</a>
           <a class="secondary-btn" href="#">Code</a>
         </article>
       </section>
@@ -99,13 +107,15 @@
       <section class="blogs-wrapper">
         <article class="blogs">
           <img class="blogs--img" src="./images/know emoticon.png" alt="Blog" />
-          <h3 class="blog--title">Blog1</h3>
-          <a class="secondary-btn" href="#">Read...</a>
+          <div class="blogs-info">
+            <a href="#"><h3 class="blog--title">Read...</h3></a>
+          </div>
         </article>
         <article class="blogs">
           <img class="blogs--img" src="./images/know emoticon.png" alt="Blog" />
-          <h4 class="blog--title">Spread vs Rest</h4>
-          <a class="secondary-btn" href="#">Read...</a>
+          <div class="blogs-info">
+            <a href="#"><h3 class="blog--title">Read...</h3></a>
+          </div>
         </article>
       </section>
       <a href="#" class="more-btn"
@@ -114,7 +124,21 @@
     </main>
 
     <footer>
-      <h1>I am footer</h1>
+      <h3 id="contact" class="footer-title">Contact</h3>
+      <div class="footer-wrapper">
+        <a href="https://twitter.com/Vanshsh2701" target="_blank"
+          ><i class="fab fa-twitter-square"></i>
+        </a>
+        <a href="https://github.com/VanshSh" target="_blank"
+          ><i class="fab fa-github-square"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/vanshsharma27/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="mailto:vanshsharma9354@gmail.com" target="_blank"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </div>
     </footer>
   </body>
 </html>
