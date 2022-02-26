@@ -21,14 +21,14 @@
   - Create bookmark links of all the sections
   - Create skill and About section
   - Move to top button 
-https://grid.malven.co/
- -->
+  - https://grid.malven.co/
+    -->
 
     <body>
         <!-- Nav bar -->
         <nav>
             <ul>
-                <li id="home"><a class="active" href="">Home</a></li>
+                <li id="home"><a class="active" href="#">Home</a></li>
                 <li><a href="./projects.html">Projects</a></li>
                 <li><a href="./blogs.html">Blogs</a></li>
                 <li>
@@ -42,19 +42,80 @@ https://grid.malven.co/
                 <h2>Vansh Sharma</h2>
                 <p>a Web Developer</p>
             </div>
-            <div >
-                <img class="header__home--hero" src="images/hero_home.svg" alt="hero" />
+            <div>
+                <img
+                    class="header__home--hero"
+                    src="images/hero_home.svg"
+                    alt="Home Hero"
+                />
             </div>
         </header>
 
+        <div class="underline"></div>
+
         <!-- Main -->
         <main>
-<section class="skills">
+            <!-- Skillls -->
+            <section class="skills">
+                <h2 class="section-heading">Technologies</h2>
+                <div class="skill">
+                    <div class="skill-holder">
+                        <img src="./Images/html-5.svg" alt="HTML5" />
+                        <p class="skill-name">HTML</p>
+                    </div>
+                    <div class="skill-holder">
+                        <img src="./Images/css3.svg" alt="CSS" />
+                        <p class="skill-name">CSS</p>
+                    </div>
+                    <div class="skill-holder">
+                        <img src="./Images/javascript.svg" alt="CSS" />
+                        <p class="skill-name">JavaScript</p>
+                    </div>
+                    <div class="skill-holder">
+                        <img src="./Images/react.svg" alt="REACT" />
+                        <p class="skill-name">REACT</p>
+                    </div>
+                    <div class="skill-holder">
+                        <img src="./Images/firebase.svg" alt="Firebase" />
+                        <p class="skill-name">Firebase</p>
+                    </div>
+                    <div class="skill-holder">
+                        <img src="./Images/git.svg" alt="Git" />
+                        <p class="skill-name">Git</p>
+                    </div>
+                    <div class="skill-holder">
+                        <img src="./Images/netlify.png" alt="Netlify" />
+                        <p class="skill-name">Netlify</p>
+                    </div>
+                </div>
+            </section>
+            <div class="underline"></div>
+            <!-- Work -->
 
-</section>
-
+            <section class="work">
+                <h2 class="section-heading">My Work</h2>
+                <div class="work-holder">
+                    <article>
+                        <img src="./Images/projects.svg" alt="Projects" />
+                        <h3>Projects</h3>
+                        <p>Checkout my projects here.</p>
+                        <a class="work-holder__links" href="./projects.html"
+                            >View Projects..</a
+                        >
+                    </article>
+                    <article>
+                        <img src="./Images/blogs.svg" alt="Projects" />
+                        <h3>Blogs</h3>
+                        <p>Read some of my blogs here.</p>
+                        <a class="work-holder__links" href="./projects.html"
+                            >Read Blogs..</a
+                        >
+                    </article>
+                </div>
+            </section>
         </main>
 
+        <!-- Footer -->
         <footer>
             <h3 id="contact" class="footer-title">get in touch</h3>
             <div class="footer-wrapper">

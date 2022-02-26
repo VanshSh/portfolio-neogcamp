@@ -27,9 +27,24 @@ body {
     border-bottom: 2px solid var(--mid-color);
 }
 
+.underline {
+    border: 1px solid whitesmoke;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #a4d3e7;
+    color: #475569;
+    margin: 0.3em 0 0 0;
+    text-align: center;
+}
+
 /* Nav bar */
 nav {
     background-color: var(--brand-color);
+    padding: 1em;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
@@ -50,6 +65,7 @@ nav a {
     color: var(--dark-color);
     font-size: 1.5rem;
     font-weight: bold;
+    text-shadow: 0 0.1em 0.1em var(--mid-color);
     padding: 0.1em;
     font-family: 'Roboto Serif', serif;
     letter-spacing: 0.02em;
@@ -63,11 +79,12 @@ nav a:hover {
 
 /* Header */
 header {
-    margin: 2em;
+    margin: 2em 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 6px;
     justify-content: center;
+    padding: 2em;
 }
 
 .header__home--info {
@@ -75,11 +92,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
-/* * {
-    border: 1px solid red;
-} */
 
 .header__home--info h2 {
     font-size: 3rem;
@@ -103,9 +116,97 @@ header {
     min-width: 150px;
 }
 
-/* Main */
-main {
-    height: 90vh;
+/* Skills */
+
+.skill-holder {
+    background-color: var(--mid-color);
+    border-radius: 10px;
+    margin: 0 1em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.skill-holder:hover {
+    box-shadow: 0 0 10px #a4d3e7;
+}
+
+.skill-holder img {
+    width: 50%;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.skill-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #475569;
+    margin: 0;
+}
+* {
+    /* border: 1px solid red; */
+}
+/* Work */
+.work-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6px;
+    justify-items: space-around;
+}
+
+.work-holder article {
+    background-color: #c7d9e0;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2em;
+    padding: 1em;
+}
+
+.work-holder h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #475569;
+    margin: 0.3em;
+}
+
+.work-holder p {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--light-color);
+    margin: 0;
+}
+.work-holder article:hover {
+    box-shadow: 0 0 10px #a4d3e7;
+}
+
+.work-holder img {
+    width: 60%;
+    max-width: 200px;
+}
+
+.work-holder__links {
+
+    display: inline-block;
+    background-color: var(--brand-color);
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    margin: 1em;font-size: 1.2rem;
+    color: var(--light-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+.work-holder__links:hover {
+    background-color: var(--light-color);
+    color: var(--brand-color);
 }
 
 /* Footer */
@@ -138,7 +239,4 @@ footer a:hover {
 
 /* media queries */
 @media screen and (max-width: 320px) {
-    body {
-        /* background-color:  */
-    }
 }
