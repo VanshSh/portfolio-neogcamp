@@ -44,7 +44,6 @@ body {
 nav {
     background-color: var(--brand-color);
     padding: 1em;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
@@ -79,29 +78,29 @@ nav a:hover {
 
 /* Header */
 header {
-    margin: 2em 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 6px;
     justify-content: center;
+    margin: 2em 0;
     padding: 2em;
 }
 
-.header__home--info {
+.header--info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.header__home--info h2 {
+.header--info h2 {
     font-size: 3rem;
     font-weight: bold;
     text-shadow: 0 0 10px #a4d3e7;
     color: #475569;
     margin: 0;
 }
-.header__home--info p {
+.header--info p {
     font-size: 1.3rem;
     font-weight: bolder;
     text-align: left;
@@ -110,7 +109,7 @@ header {
     margin: 0;
 }
 
-.header__home--hero {
+.header--hero {
     width: 100%;
     max-width: 420px;
     min-width: 150px;
@@ -150,15 +149,15 @@ header {
     color: #475569;
     margin: 0;
 }
-* {
-    /* border: 1px solid red; */
-}
+
 /* Work */
+
 .work-holder {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 6px;
-    justify-items: space-around;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em;
 }
 
 .work-holder article {
@@ -194,12 +193,12 @@ header {
 }
 
 .work-holder__links {
-
     display: inline-block;
     background-color: var(--brand-color);
     border-radius: 10px;
     padding: 0.5em 1em;
-    margin: 1em;font-size: 1.2rem;
+    margin: 1em;
+    font-size: 1.2rem;
     color: var(--light-color);
     font-weight: bold;
     text-decoration: none;
