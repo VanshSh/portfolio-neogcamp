@@ -40,6 +40,42 @@ body {
     text-align: center;
 }
 
+.secondary-btn {
+    display: inline-block;
+    border: 1px solid var(--light-color);
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    margin: 1em;
+    font-size: 1.2rem;
+    color: var(--light-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.secondary-btn:hover {
+    background-color: var(--light-color);
+    color: var(--brand-color);
+}
+
+.primary-btn {
+    display: inline-block;
+    border: 1px solid var(--light-color);
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    margin: 1em;
+    font-size: 1.2rem;
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.primary-btn:hover {
+    background-color: var(--brand-color);
+    color: var(--light-color);
+    border: none;
+}
+
 /* Nav bar */
 nav {
     background-color: var(--brand-color);
@@ -177,7 +213,7 @@ header {
 }
 
 .work-holder p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bolder;
     text-align: center;
     color: var(--light-color);
@@ -192,20 +228,99 @@ header {
     max-width: 200px;
 }
 
-.work-holder__links {
-    display: inline-block;
-    background-color: var(--brand-color);
-    border-radius: 10px;
-    padding: 0.5em 1em;
-    margin: 1em;
-    font-size: 1.2rem;
-    color: var(--light-color);
-    font-weight: bold;
-    text-decoration: none;
+* {
+    /* border: 1px solid red; */
 }
-.work-holder__links:hover {
+
+/* Projects */
+.projects-holder {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 6px;
+    justify-content: center;
+    margin: 2em 0;
+    padding: 2em;
+}
+
+.project {
+    background-color: #cad5d9;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.project:hover {
+    box-shadow: 0 0 10px #a4d3e7;
+}
+
+.project-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #475569;
+    margin: 0.3em;
+}
+
+.project-mark {
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(243, 9, 87);
     background-color: var(--light-color);
-    color: var(--brand-color);
+    padding: 0.3em;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.project-img {
+    width: 100%;
+    aspect-ratio: 5/3;
+    max-width: 300px;
+}
+
+/* Blogs */
+
+.blogs-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.blogs-holder article {
+    padding: 1em;
+    background-color: #aebec4;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--dark-color);
+    font-weight: bolder;
+}
+
+.blogs-holder article:hover {
+    box-shadow: 0 0 10px #a4d3e7;
+}
+
+.blogs-holder h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #4e5b6d;
+}
+
+.blogs-holder p {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--light-color);
+}
+
+.blog-img {
+    width: 100%;
+    max-width: 300px;
+    min-width: 150px;
 }
 
 /* Footer */
