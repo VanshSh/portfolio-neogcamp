@@ -12,6 +12,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    object-fit: cover;
 }
 
 body {
@@ -47,8 +48,8 @@ body {
     padding: 0.5em 1em;
     margin: 1em;
     font-size: 1.2rem;
-    color: var(--light-color);
-    font-weight: bold;
+    color: var(--dark-color);
+    font-weight: bolder;
     text-decoration: none;
 }
 
@@ -190,17 +191,19 @@ header {
 
 .work-holder {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content:space-evenly ;
     flex-wrap: wrap;
+    gap:16px;
     padding: 2em;
+    margin: 0 1em;
+    border-radius: 10px;
 }
 
 .work-holder article {
     background-color: #c7d9e0;
     border-radius: 10px;
     text-align: center;
-    margin: 2em;
     padding: 1em;
 }
 
@@ -224,26 +227,25 @@ header {
 }
 
 .work-holder img {
-    width: 60%;
-    max-width: 200px;
-}
-
-* {
-    /* border: 1px solid red; */
+    width: 90%;
+    height: 300px;
+    object-fit: contain;
+    margin-top: 8px;
+    border-radius: 10px;
 }
 
 /* Projects */
 .projects-holder {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 6px;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    grid-gap: 16px;
     justify-content: center;
     margin: 2em 0;
     padding: 2em;
 }
 
 .project {
-    background-color: #cad5d9;
+    background-color: #bbc9cf;
     border-radius: 10px;
     text-align: center;
     padding: 0.5em;
@@ -274,18 +276,32 @@ header {
 
 .project-img {
     width: 100%;
-    aspect-ratio: 5/3;
-    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 8px;
+    border-radius: 10px;
+    border: 1px solid var(--dark-color);
+}
+
+
+
+.project-description {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--dark-color);
+    margin: 0;
 }
 
 /* Blogs */
 
 .blogs-holder {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    grid-gap: 16px;
     justify-content: center;
     align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
+    margin: 2em 0;
     padding: 2em;
 }
 
@@ -319,8 +335,10 @@ header {
 
 .blog-img {
     width: 100%;
-    max-width: 300px;
-    min-width: 150px;
+    height: 300px;
+    object-fit: contain;
+    margin-top: 8px;
+    border-radius: 10px;
 }
 
 /* Footer */
@@ -353,4 +371,7 @@ footer a:hover {
 
 /* media queries */
 @media screen and (max-width: 320px) {
+    body {
+        /* background-color: red; */
+    }
 }
