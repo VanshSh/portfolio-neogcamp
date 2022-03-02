@@ -235,7 +235,7 @@ header {
 /* Projects */
 .projects-holder {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 16px;
     justify-content: space-around;
     margin: 2em;
@@ -254,7 +254,6 @@ header {
 }
 
 .project-title {
-    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     color: #475569;
@@ -405,6 +404,17 @@ footer a:hover {
         align-items: center;
         flex-direction: column;
         margin: 2em 0;
+        padding: 2em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .projects-holder {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+        grid-gap: 10px;
+        justify-content: space-around;
+        margin: 2em;
         padding: 2em;
     }
 }
