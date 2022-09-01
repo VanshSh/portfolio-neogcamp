@@ -3,7 +3,7 @@
 This is personal website which showcase all the projects of Neogcamp Level0.
 
 
-## [LIVE](https://vanshsharma.netlify.app/)
+## [LIVE](https://vanshsharma-neogcamp.vercel.app/)
 
 ---
 
