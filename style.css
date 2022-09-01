@@ -136,6 +136,7 @@ header {
     color: #475569;
     margin: 0;
 }
+
 .header--info p {
     font-size: 1.3rem;
     font-weight: bolder;
@@ -161,6 +162,7 @@ header {
     align-items: center;
     margin: 2em 1em;
 }
+
 .skill-holder {
     background-color: var(--mid-color);
     border-radius: 10px;
@@ -220,6 +222,7 @@ header {
     color: var(--light-color);
     margin: 0;
 }
+
 .work-holder article:hover {
     box-shadow: 0 0 10px #a4d3e7;
 }
@@ -354,10 +357,12 @@ footer {
     padding: 0.5em 0;
     color: black;
 }
+
 footer a {
     padding: 0.5em;
     font-size: 2rem;
     color: var(--dark-color);
+
 }
 
 footer a:hover {
