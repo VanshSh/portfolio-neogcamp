@@ -16,7 +16,7 @@ This is personal website which showcase all the projects of Neogcamp Level0.
 - HTML
 - CSSS
 - Javacript
-- Hosted (Netlify)
+- Hosted (Vercel)
 
 ---
 
